@@ -1,0 +1,33 @@
+server:
+  port: 9125
+
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          lower-case-service-id: true
+          enabled: true
+#      routes:  # 使用下面的nacos做动态路由的刷新
+#        - id: order-service
+#          uri: lb://order-service
+#          predicates:
+#            - Path=/order/**
+#        - id: oauth2-server
+#          uri: lb://oauth2-server
+#          predicates:
+#            - Path=/oauth/**
+    nacos:
+      discovery:
+        username: nacos
+        password: nacos
+
+# 网关使用nacos做动态路由刷新，在nacos创建配置文件，把 `gateway-nacos.json` 文件内容复制到配置文件即可
+gateway:
+  nacos:
+    dataId: gateway-dynamic-route
+    username: nacos
+    password: nacos
+    namespace: 62cf0d06-8686-4030-9d66-d6338974430c

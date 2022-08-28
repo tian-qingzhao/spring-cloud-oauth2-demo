@@ -1,0 +1,54 @@
+{
+  "groups": [
+    {
+      "name": "gateway.nacos",
+      "type": "com.tqz.oauth2.gateway.route.properties.GatewayNacosProperties",
+      "sourceType": "com.tqz.oauth2.gateway.route.properties.GatewayNacosProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "gateway.nacos.data-id",
+      "type": "java.lang.String",
+      "description": "dataId",
+      "sourceType": "com.tqz.oauth2.gateway.route.properties.GatewayNacosProperties"
+    },
+    {
+      "name": "gateway.nacos.group",
+      "type": "java.lang.String",
+      "description": "分组名称",
+      "sourceType": "com.tqz.oauth2.gateway.route.properties.GatewayNacosProperties"
+    },
+    {
+      "name": "gateway.nacos.namespace",
+      "type": "java.lang.String",
+      "description": "命名空间",
+      "sourceType": "com.tqz.oauth2.gateway.route.properties.GatewayNacosProperties"
+    },
+    {
+      "name": "gateway.nacos.password",
+      "type": "java.lang.String",
+      "description": "密码",
+      "sourceType": "com.tqz.oauth2.gateway.route.properties.GatewayNacosProperties"
+    },
+    {
+      "name": "gateway.nacos.server-addr",
+      "type": "java.lang.String",
+      "description": "nacos服务端地址",
+      "sourceType": "com.tqz.oauth2.gateway.route.properties.GatewayNacosProperties"
+    },
+    {
+      "name": "gateway.nacos.timeout-ms",
+      "type": "java.lang.Long",
+      "description": "拉取配置超时时间，单位毫秒",
+      "sourceType": "com.tqz.oauth2.gateway.route.properties.GatewayNacosProperties"
+    },
+    {
+      "name": "gateway.nacos.username",
+      "type": "java.lang.String",
+      "description": "用户名",
+      "sourceType": "com.tqz.oauth2.gateway.route.properties.GatewayNacosProperties"
+    }
+  ],
+  "hints": []
+}
